@@ -1,4 +1,4 @@
-FROM golang:1.11
+FROM golang:1.11.4
 
 MAINTAINER tehsphinx <tehsphinx@web.de>
 # Credits to Péter Szilágyi <peterke@gmail.com> whos awesome xgo containers I stole this from.
