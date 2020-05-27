@@ -1,6 +1,6 @@
-FROM golang:1.13.4
+FROM golang:1.14.3
 
-MAINTAINER tehsphinx <tehsphinx@web.de>
+LABEL authors="tehsphinx <tehsphinx@web.de>"
 # Credits to Péter Szilágyi <peterke@gmail.com> whos awesome xgo containers I stole this from.
 
 # Make sure apt-get is up to date and dependent packages are installed
@@ -20,5 +20,7 @@ RUN \
     make xz-utils cpio wget zip unzip p7zip git mercurial bzr texinfo help2man           \
     libgtk-3-dev libappindicator3-dev \
     --no-install-recommends
+
+RUN curl -sL https://taskfile.dev/install.sh | sh
 
 CMD ["bash"]
