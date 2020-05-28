@@ -19,6 +19,7 @@ RUN \
     libtool libxml2-dev uuid-dev libssl-dev swig pkg-config patch         \
     make xz-utils cpio wget zip unzip p7zip git mercurial bzr texinfo help2man           \
     libgtk-3-dev libappindicator3-dev \
+    unixodbc-dev \
     --no-install-recommends
 
 RUN curl -sL https://taskfile.dev/install.sh | sh
